@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones de Ambientes - [Nombre del Profesional]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fondo-header.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        /* Navegación */
+        nav {
+            background: #333;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+
+        /* Sección Principal */
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Sección Servicios */
+        .servicios {
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .servicio-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Galería de Proyectos */
+        .galeria {
+            padding: 50px 20px;
+        }
+
+        .grid-proyectos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .proyecto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .proyecto img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Contacto */
+        .contacto {
+            padding: 50px 20px;
+            background: #333;
+            color: white;
+        }
+
+        .form-contacto {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #E8B08C;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <!-- <li><a href="#contacto">Contacto</a></li> -->
+        </ul>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <h1>Transformamos tus espacios en lugares únicos</h1>
+        <p>Diseño y remodelación de interiores residenciales</p>
+        <button>Contactar ahora</button>
+    </header>
+
+    <section class="servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <h3>Rediseño de Interiores</h3>
+                <p>Reinterpretación de espacios existentes con nuevos conceptos decorativos</p>
+            </div>
+            <div class="servicio-card">
+                <h3>Remodelaciones Integrales</h3>
+                <p>Transformación completa de ambientes incluyendo instalaciones</p>
+            </div>
+            <div class="servicio-card">
+                <h3>Asesoría Personalizada</h3>
+                <p>Soluciones a medida para cada espacio y necesidad</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria" id="proyectos">
+        <h2>Proyectos Realizados</h2>
+        <div class="grid-proyectos">
+            <div class="proyecto">
+                <img src="assets/images/cocina-moderna.jpg" alt="cocina moderna">
+                <a href="#">Hogares</a>
+            </div>
+            <div class="proyecto">
+                <img src="assets/images/Escaparate-local-comercial.jpg" alt="Escaparate local comercial">
+                <a href="#">Locales comerciales</a>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto3.jpg" alt="Diseño de dormitorio">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <form class="form-contacto">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Teléfono">
+            <textarea rows="5" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+            <button type="submit">Enviar consulta</button>
+        </form>
+    </section> -->
+
+    <footer>
+        <p>© 2023 Transformaciones de Ambientes - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
